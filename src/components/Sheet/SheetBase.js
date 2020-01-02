@@ -90,7 +90,7 @@ function SheetBase({width, height}) {
       classNameTopRightGrid={classes['top-right']}
       classNameBottomRightGrid={classes['bottom-right']}
       cellRenderer={cellRenderer}
-      columnWidth={({index}) => index ? 75 : 45}
+      columnWidth={({index}) => index ? 100 : 45}
       columnCount={columnCount}
       fixedColumnCount={1}
       fixedRowCount={1}
