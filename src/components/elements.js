@@ -7,18 +7,9 @@ export const AppContainer = styled.div`
   height: 100vh;
 `;
 
-export const SheetBaseContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  
-  > * {
-    display: inline-block;
-    box-sizing: border-box;
-    font-size: 12px;
-    padding: 0 8px;
-    line-height: 24px;
-  }
+export const StyledSheet = styled.div`
+  width: 100vw;
+  height: 100vh;
 `;
 
 export const FormulaBarContainer = styled.div`
