@@ -23,13 +23,14 @@ export const FormulaBarContainer = styled.div`
   border-bottom: 1px solid #eee;
   
   > * {
-    margin: 0 8px;
+    margin: 0 15px;
   }
 `;
 
 export const FormulaInput = styled.input`
   flex-grow: 1;
   border: 0;
+  letter-spacing: 1px;
   
   &:focus {
     outline: none;
