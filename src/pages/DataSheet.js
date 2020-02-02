@@ -1,14 +1,10 @@
 import React from "react";
-import {useOvermind} from "store";
+import { useOvermind } from "store";
 // import Spreadsheet from "react-spreadsheet";
-import Spreadsheet from "components/Sheet";
+import Spreadsheet from "./Sheet";
 
 export default function DataSheet(props) {
-  const {state, actions} = useOvermind();
+  const { state, actions } = useOvermind();
 
-  return (
-    <Spreadsheet
-      data={state.grid}
-    />
-  );
+  return <Spreadsheet data={state.grid} />;
 }
