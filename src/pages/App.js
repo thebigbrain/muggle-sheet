@@ -1,13 +1,18 @@
-import React from 'react';
-// import AppBar from './AppBar';
-import {AppContainer} from "components/elements";
-import DataSheet from "pages/DataSheet";
+import React from "react";
+import { styled } from "@material-ui/styles";
+import Layout from "./Layout";
+
+export const AppContainer = styled("div")({
+  display: "flex",
+  flexDirection: "column",
+  width: "100vw",
+  height: "100vh"
+});
 
 function App() {
   return (
     <AppContainer>
-      {/*<AppBar />*/}
-      <DataSheet />
+      <Layout />
     </AppContainer>
   );
 }

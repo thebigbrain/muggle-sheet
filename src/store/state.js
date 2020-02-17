@@ -28,8 +28,10 @@ const SHEET_HEADER = [
   "Z"
 ];
 
-export default {
+export const state = {
   sheetHeader: SHEET_HEADER,
-  sheetRowCount: 200,
-  sheetData: null
+  sheetRowCount: 1000,
+  sheetData: null,
+  grid: null,
+  routes: []
 };

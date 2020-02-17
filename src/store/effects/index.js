@@ -1,2 +1,7 @@
-export { default as http } from "./http";
-export { default as api } from "./api";
+import http from "./http";
+import * as api from "./api";
+
+export default {
+  http,
+  api
+};

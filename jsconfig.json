@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
     "jsx": "react",
-    "baseUrl": "./src"
+    "target": "es6",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "checkJs": false
   },
-  "exclude": [
-    "node_modules",
-    "build",
-    "coverage",
-    "dist",
-    "lib"
-  ]
+  "paths": {
+    "components/*": "../stories/components/*",
+    "containers/*": "../stories/containers/*"
+  },
+  "include": ["./src/**/*", "./stories/**/*"],
+  "exclude": ["dist", "public", ".cache", "node_modules", "node_modules/**/*"]
 }
