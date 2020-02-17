@@ -2,7 +2,7 @@
 import React from "react";
 import * as overmind from "overmind";
 import * as overmindReact from "overmind-react";
-import * as MaterialUiStyle from "@material-ui/styles";
+// import * as MaterialUiStyle from "@material-ui/styles";
 import * as MaterialUiCore from "@material-ui/core";
 import * as MaterialUiIcons from "@material-ui/icons";
 import * as hooks from "hooks";
@@ -15,7 +15,7 @@ const installedModules = new Map([
   ["overmind-react", overmindReact],
   ["react-router-dom", ReactRouterDom],
   ["react-router", ReactRouter],
-  ["@material-ui/styles", MaterialUiStyle],
+  // ["@material-ui/styles", MaterialUiStyle],
   ["@material-ui/core", MaterialUiCore],
   ["@material-ui/icons", MaterialUiIcons],
   ["hooks", hooks]
