@@ -8,8 +8,7 @@
     "checkJs": false
   },
   "paths": {
-    "components/*": "../stories/components/*",
-    "containers/*": "../stories/containers/*"
+    "stories/*": "../stories/*"
   },
   "include": ["./src/**/*", "./stories/**/*"],
   "exclude": ["dist", "public", ".cache", "node_modules", "node_modules/**/*"]
