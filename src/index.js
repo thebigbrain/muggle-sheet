@@ -1,22 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { OvermindProvider } from "./store";
-import App from "./pages/App";
+import Root from "./pages/Root";
 import * as serviceWorker from "./serviceWorker";
 
-import "react-datasheet/lib/react-datasheet.css";
-import { CssBaseline } from "@material-ui/core";
-
-ReactDOM.render(
-  <React.Fragment>
-    <CssBaseline />
-    <OvermindProvider>
-      <App />
-    </OvermindProvider>
-  </React.Fragment>,
-
-  document.getElementById("root")
-);
+ReactDOM.render(<Root />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

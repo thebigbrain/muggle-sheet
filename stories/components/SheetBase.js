@@ -2,6 +2,8 @@ import React from "react";
 import { MultiGrid } from "react-virtualized";
 import { makeStyles } from "@material-ui/core";
 
+import "react-datasheet/lib/react-datasheet.css";
+
 const border = "1px solid #c0c0c0";
 const borderTopBottom = {
   borderTop: border,
