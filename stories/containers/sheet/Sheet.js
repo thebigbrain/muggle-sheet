@@ -2,12 +2,12 @@
 import React from "react";
 import { StyledSheet } from "stories/components/elements";
 import { AutoSizer } from "react-virtualized";
-import { useOvermind } from "hooks/overmind";
+import { useStore } from "hooks/overmind";
 import SheetBase from "stories/components/SheetBase";
 import FormulaBar from "stories/components/FormulaBar";
 
 function Sheet() {
-  const { state } = useOvermind();
+  const { state } = useStore();
   const data = state.sheetData;
 
   if (data == null) return null;
@@ -22,8 +22,11 @@ function Sheet() {
 }
 
 export default function(props) {
-  const { actions } = useOvermind();
-  actions.updateSheet();
+  const { actions } = useStore();
+
+  React.useEffect(() => {
+    actions.updateSheet();
+  }, []);
 
   // setTimeout(() => {
   //   let partial = {};

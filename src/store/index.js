@@ -1,21 +1,17 @@
 import React from "react";
 import { createOvermind } from "overmind";
 import { Provider } from "overmind-react";
-import { namespaced, merge } from "overmind/config";
 import { state } from "./state";
 import { onInitialize } from "./onInitialize";
 import * as actions from "./actions";
 import effects from "./effects";
 
-export const config = merge(
-  {
-    state,
-    actions,
-    effects,
-    onInitialize
-  },
-  namespaced({})
-);
+export const config = {
+  state,
+  actions,
+  effects,
+  onInitialize
+};
 
 export const overmind = createOvermind(config, {
   devtools: false,

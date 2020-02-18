@@ -6,8 +6,8 @@ import * as overmindReact from "overmind-react";
 import * as MaterialUiCore from "@material-ui/core";
 import * as MaterialUiIcons from "@material-ui/icons";
 import * as hooks from "hooks";
-import ReactRouterDom from "react-router-dom";
-import ReactRouter from "react-router";
+import * as ReactRouterDom from "react-router-dom";
+import * as ReactRouter from "react-router";
 
 const installedModules = new Map([
   ["react", React],

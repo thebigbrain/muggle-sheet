@@ -3,7 +3,7 @@ import { createHook } from "overmind-react";
 import store from "store";
 import { useContext } from "react";
 
-export { Provider as OvermindProvider } from "overmind-react";
+export { OvermindProvider } from "store";
 
 export const StoreContext = React.createContext({
   state: store.state,
