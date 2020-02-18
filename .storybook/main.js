@@ -6,7 +6,10 @@ module.exports = {
   addons: ["@storybook/addon-actions", "@storybook/addon-links"],
   webpackFinal: config => {
     return {
-      ...config
+      ...config,
+      resolve: {
+        modules: [...config.resolve.modules, ...custom.resolve.modules]
+      }
     };
   }
 };
